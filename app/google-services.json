@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1029551821179",
+    "firebase_url": "https://hora-26c5f.firebaseio.com",
+    "project_id": "hora-26c5f",
+    "storage_bucket": "hora-26c5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029551821179:android:d62bdde7dbcacc1d",
+        "android_client_info": {
+          "package_name": "com.example.justinsebastian.hora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029551821179-00njsupah798nhvmrapujaftgaasdqfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.justinsebastian.hora",
+            "certificate_hash": "eabdb0b523f923f6e9771f0e7f2c58eed8b8ce99"
+          }
+        },
+        {
+          "client_id": "1029551821179-5cjj64ga7k21sdmlascnnd1imanapn6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOiUTivf6Uv38wBR-_JBcCAPYMuYKS7A8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029551821179-5cjj64ga7k21sdmlascnnd1imanapn6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029551821179:android:7c69e603ced46641",
+        "android_client_info": {
+          "package_name": "hora.justinsebastian.example.com.hora_bus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029551821179-r8grumcckuvrpl5sr2lepu23jnioj0j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hora.justinsebastian.example.com.hora_bus",
+            "certificate_hash": "2606b6642afdcbbe3a767738d8b5182a6d4ec2c7"
+          }
+        },
+        {
+          "client_id": "1029551821179-5cjj64ga7k21sdmlascnnd1imanapn6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOiUTivf6Uv38wBR-_JBcCAPYMuYKS7A8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029551821179-5cjj64ga7k21sdmlascnnd1imanapn6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
