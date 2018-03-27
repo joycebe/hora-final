@@ -25,7 +25,15 @@
         <activity
             android:name=".AdminprofileActivity"
             android:label="@string/title_activity_adminprofile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register" />
+        <activity android:name=".Insert" />
+        <activity android:name=".Routeinsert" />
+        <activity android:name=".Route" />
+        <activity android:name=".Delete1" />
+        <activity android:name=".Routedelete" />
+        <activity android:name=".Update1" />
+        <activity android:name=".Update2"></activity>
     </application>
 
 </manifest>

@@ -11,4 +11,18 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_adminprofile">AdminprofileActivity</string>
+    <string-array name="types">
+        <item>Select bus type</item>
+        <item>Ordinary</item>
+        <item>Fast</item>
+        <item>Limited Stop</item>
+        <item>Super Fast</item>
+        <item>Minnal</item>
+
+    </string-array>
+    <string-array name="status">
+        <item>RUNNING</item>
+        <item>HALTED</item>
+
+    </string-array>
 </resources>

@@ -79,11 +79,19 @@ public class AdminprofileActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+            finish();
+            startActivity(new Intent(getApplicationContext(),Register.class));
         } else if (id == R.id.nav_gallery) {
 
+            finish();
+            startActivity(new Intent(getApplicationContext(),Insert.class));
         } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+            finish();
+            startActivity(new Intent(getApplicationContext(),Delete1.class));
+        } else if (id == R.id.nav_galle) {
+            finish();
+            startActivity(new Intent(getApplicationContext(),Update1.class));
 
         } else if (id == R.id.nav_sigout) {
             mAuth.signOut();

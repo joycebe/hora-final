@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hora.justinsebastian.example.com.hora_bus.Routeinsert">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <TextView
+            android:id="@+id/sour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOURCE" />
+
+        <EditText
+            android:id="@+id/sourcename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="enter source name"/>
+
+        <EditText
+            android:id="@+id/sourcetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="enter source time(24hr format)"/>
+
+        <TextView
+            android:id="@+id/desti"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="DESTINATION" />
+
+        <EditText
+            android:id="@+id/destinationname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="enter destination name"/>
+
+        <EditText
+            android:id="@+id/destinationtime"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text=""
+            android:hint="enter destination time(24hr format)"/>
+
+
+        <EditText
+            android:id="@+id/stopno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter route id"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="insert" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

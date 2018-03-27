@@ -7,15 +7,19 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Insert a new bus" />
+            android:title="Register a new bus" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Update" />
+            android:title="insert a bus route" />
+        <item
+            android:id="@+id/nav_galle"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Update a bus" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Delete" />
+            android:title="Delete a bus" />
         <item
             android:id="@+id/nav_sigout"
             android:icon="@drawable/ic_menu_camera"

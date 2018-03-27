@@ -5,7 +5,7 @@ package hora.justinsebastian.example.com.hora_bus;
  */
 
 public class details {
-    public String name,type;
+    public String name,type,email;
     public details()
     {
 
@@ -15,7 +15,12 @@ public class details {
         return name;
     }
     public String gettype()
+
     {
         return type;
+    }
+    public String getemail()
+    {
+        return  email;
     }
 }
