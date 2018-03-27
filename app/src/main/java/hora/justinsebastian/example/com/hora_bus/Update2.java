@@ -39,7 +39,7 @@ public class Update2 extends AppCompatActivity implements  View.OnClickListener{
 
 
 
-            mDatabase.child("busdetail").child(getIntent().getStringExtra( "id" )).child("satus").setValue(status);
+            mDatabase.child("bus").child(getIntent().getStringExtra( "id" )).child("satus").setValue(status);
 
             Toast.makeText(getApplicationContext(), "STATUS UPDATED", Toast.LENGTH_LONG).show();
 

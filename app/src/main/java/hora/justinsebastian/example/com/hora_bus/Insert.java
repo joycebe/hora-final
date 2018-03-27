@@ -3,6 +3,7 @@ package hora.justinsebastian.example.com.hora_bus;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,10 @@ public class Insert extends AppCompatActivity implements View.OnClickListener{
         if(v==register)
         {
             final String email = inputEmail.getText().toString();
+            if (TextUtils.isEmpty(email)) {
+                Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
+                return;
+            }
             //sourcE = getIntent().getStringExtra( "sourcee" );
 
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("bus");
