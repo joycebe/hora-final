@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:background="#00e6e3e3"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+            <EditText
+                android:id="@+id/textViewName"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginBottom="8dp"
+                android:hint="stop"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/time"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginBottom="8dp"
+                android:hint="time"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text=" insert "
+
+
+            android:id="@+id/buttonCallNow"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_gravity="right"
+            android:clickable="true" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

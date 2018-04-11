@@ -8,4 +8,20 @@
     tools:context="hora.justinsebastian.example.com.hora_bus.AdminprofileActivity"
     tools:showIn="@layout/app_bar_adminprofile">
 
+    <RelativeLayout
+        android:layout_width="381dp"
+        android:layout_height="495dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="206dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="“The gladdest moment in human life, me thinks, is a departure into unknown lands.” – Sir Richard Burton" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

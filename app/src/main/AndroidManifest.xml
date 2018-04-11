@@ -33,7 +33,8 @@
         <activity android:name=".Delete1" />
         <activity android:name=".Routedelete" />
         <activity android:name=".Update1" />
-        <activity android:name=".Update2"></activity>
+        <activity android:name=".Update2" />
+        <activity android:name=".Options"></activity>
     </application>
 
 </manifest>
