@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:stretchColumns="0,1"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Name here"
+        android:id="@+id/name_heree"
+        android:padding="6dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Source here"
+        android:id="@+id/source_heree"
+        android:padding="2dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Time here"
+        android:id="@+id/time_heree"
+        android:padding="6dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Destination here"
+        android:id="@+id/destination_heree"
+        android:padding="6dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Type here"
+        android:id="@+id/type_heree"
+        android:padding="6dp"
+        android:textSize="25sp"
+        />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:text="Location"
+        android:textColor="#FAFAD2" />
+
+        <TableRow
+            android:background="#000000"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Stop"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time "
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+    <TableRow
+        android:background="#000000"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="0"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="source"
+            android:layout_margin="1dp"
+            android:layout_column="0"
+            android:background="#FFFFFF"
+            android:id="@+id/tablesource"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Source time"
+            android:id="@+id/tablestime"
+            android:layout_margin="1dp"
+            android:layout_column="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            />
+    </TableRow>
+
+        <TableRow
+            android:background="#000000"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="stop1 here"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:id="@+id/stop1_heree"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Time1 here"
+                android:id="@+id/time1_heree"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+        </TableRow>
+    <TableRow
+        android:background="#000000"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="0"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="stop2 here"
+            android:layout_margin="1dp"
+            android:layout_column="0"
+            android:background="#FFFFFF"
+            android:id="@+id/stop2_heree"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Time2 here"
+            android:id="@+id/time2_heree"
+            android:layout_margin="1dp"
+            android:layout_column="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:background="#000000"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="0"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dest "
+            android:layout_margin="1dp"
+            android:layout_column="0"
+            android:background="#FFFFFF"
+            android:id="@+id/tabledest"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" Dest Time"
+            android:id="@+id/tabledtime"
+            android:layout_margin="1dp"
+            android:layout_column="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            />
+    </TableRow>
+</TableLayout>

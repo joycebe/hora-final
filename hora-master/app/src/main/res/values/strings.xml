@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">hora</string>
+
+    <string name="firebase_email">Email</string>
+    <string name="firebase_path">location</string>
+    <string name="firebase_password">Password</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="names">
+        <item>Select Time</item>
+        <item>06:00:00 to 12:00:00</item>
+        <item>12:00:00 to 18:00:00</item>
+        <item>18:00:00 to 23:00:00</item>
+        <item>23:00:00 to 06:00:00</item>
+
+    </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_display">Map</string>
+
+</resources>
