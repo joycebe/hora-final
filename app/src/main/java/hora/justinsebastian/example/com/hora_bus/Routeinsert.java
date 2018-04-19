@@ -3,9 +3,8 @@ package hora.justinsebastian.example.com.hora_bus;
 import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -14,14 +13,12 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +33,7 @@ public class Routeinsert extends AppCompatActivity implements View.OnClickListen
     private FirebaseAuth mAuth;
     private  int mHour,mMinute;
     details prof;
-    String id2;
+
 
 
     @SuppressLint("WrongViewCast")
@@ -51,6 +48,7 @@ public class Routeinsert extends AppCompatActivity implements View.OnClickListen
 
         sourcetime= findViewById(R.id.sourcetime);
         sourcetime.setOnClickListener(this);
+       // sourcetime.addTextChangedListener(new PatternedTextWatcher("###-###-####"));
 
 
         destination= findViewById(R.id.destinationname);
@@ -124,6 +122,14 @@ public class Routeinsert extends AppCompatActivity implements View.OnClickListen
                             regi.put("type",type);
                             String id2 =mDatabase.push().getKey();
                             mDataba.child(id2).setValue(regi);
+                            Intent intent= new Intent(Routeinsert.this,Route.class);
+
+                            intent.putExtra( "uid",getIntent().getStringExtra( "id" ) );
+                            intent.putExtra("routeid",id2);
+                            Toast.makeText(getApplicationContext(), "!"+id2, Toast.LENGTH_SHORT).show();
+
+                            // intent.putExtra("rnumber",0);
+                            startActivity(intent);
 
                         }
 
@@ -155,12 +161,7 @@ public class Routeinsert extends AppCompatActivity implements View.OnClickListen
 
 
 
-            Intent intent= new Intent(Routeinsert.this,Route.class);
 
-            intent.putExtra( "uid",getIntent().getStringExtra( "id" ) );
-            intent.putExtra("routeid",id2);
-           // intent.putExtra("rnumber",0);
-            startActivity(intent);
         }
         else if(v==sourcetime)
         {

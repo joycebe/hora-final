@@ -1,8 +1,10 @@
 package hora.justinsebastian.example.com.hora_bus;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +24,7 @@ public class Update1 extends AppCompatActivity implements View.OnClickListener {
     private FirebaseAuth mAuth;
     details prof;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,8 @@ public class Update1 extends AppCompatActivity implements View.OnClickListener {
         inputEmail = findViewById(R.id.email);
         register = findViewById(R.id.emailreg);
         register.setOnClickListener(this);
+
+        
     }
 
     @Override
@@ -106,6 +111,7 @@ public class Update1 extends AppCompatActivity implements View.OnClickListener {
         //intent.putExtra( "sourcee",email );
         //startActivity(intent);
     }
+
 
 
 }

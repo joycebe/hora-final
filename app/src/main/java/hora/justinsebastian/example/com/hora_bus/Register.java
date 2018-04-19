@@ -103,8 +103,7 @@ public class Register extends AppCompatActivity implements  View.OnClickListener
                                 mDatabase.child("bus").child(currentFirebaseUser.getUid()).child("type").setValue(type);
                                 mDatabase.child("bus").child(currentFirebaseUser.getUid()).child("email").setValue(currentFirebaseUser.getEmail());
                                 mDatabase.child("bus").child(currentFirebaseUser.getUid()).child("satus").setValue("RUNNING");
-                                mDatabase.child("busdetail").child(currentFirebaseUser.getUid()).child("name").setValue(bname);
-                                mDatabase.child("busdetail").child(currentFirebaseUser.getUid()).child("type").setValue(type);
+
 
                                 Toast.makeText(Register.this, "Registered.",
                                         Toast.LENGTH_SHORT).show();

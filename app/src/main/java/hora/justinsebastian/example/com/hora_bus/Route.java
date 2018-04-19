@@ -60,6 +60,11 @@ public class Route extends AppCompatActivity implements View.OnClickListener {
             String stop1=st1.getText().toString();
             String time1=tym1.getText().toString();
             if (TextUtils.isEmpty(stop1)&&TextUtils.isEmpty(time1)) {
+
+                i++;
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("stop"+i).setValue("-");
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("time"+i).setValue("-");
+
                 Toast.makeText(getApplicationContext(), "no Stops are added", Toast.LENGTH_SHORT).show();
                 Intent intent= new Intent(Route.this,AdminprofileActivity.class);
                 startActivity(intent);
@@ -77,6 +82,9 @@ public class Route extends AppCompatActivity implements View.OnClickListener {
             String stop2=st2.getText().toString();
             String time2=tym2.getText().toString();
             if (TextUtils.isEmpty(stop2)&&TextUtils.isEmpty(time2)) {
+                i++;
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("stop"+i).setValue("-");
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("time"+i).setValue("-");
                 Toast.makeText(getApplicationContext(), "no stops are added", Toast.LENGTH_SHORT).show();
                 Intent intent= new Intent(Route.this,AdminprofileActivity.class);
                 startActivity(intent);
@@ -96,8 +104,13 @@ public class Route extends AppCompatActivity implements View.OnClickListener {
             String stop3=st3.getText().toString();
             String time3=tym3.getText().toString();
             if (TextUtils.isEmpty(stop3)&&TextUtils.isEmpty(time3)) {
+                i++;
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("stop"+i).setValue("-");
+                mDatabase.child("busdetail").child(getIntent().getStringExtra( "uid" )).child(getIntent().getStringExtra( "routeid" )).child("time"+i).setValue("-");
                 Toast.makeText(getApplicationContext(), "no stops are added", Toast.LENGTH_SHORT).show();
-                return;
+                Intent intent= new Intent(Route.this,AdminprofileActivity.class);
+                startActivity(intent);
+
             }
             else {
                 i++;

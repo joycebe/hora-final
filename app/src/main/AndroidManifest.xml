@@ -3,7 +3,7 @@
     package="hora.justinsebastian.example.com.hora_bus">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -34,7 +34,8 @@
         <activity android:name=".Routedelete" />
         <activity android:name=".Update1" />
         <activity android:name=".Update2" />
-        <activity android:name=".Options"></activity>
+        <activity android:name=".Options" />
+
     </application>
 
 </manifest>
